@@ -1,0 +1,93 @@
+package Assignment;
+import java.util.Scanner;
+public class Dessert {
+
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner (System.in);
+	    
+	    //declare all the variables
+	    double  tartSoldLastMonth, pieSoldLastMonth, puddingSoldLastMonth,
+	    		avgTartMade, avgPieMade, avgPuddingMade; 
+	    int	    tartMade, pieMade, puddingMade, 
+	    		tartSold, pieSold, puddingSold, 
+	    		tartLeft, pieLeft, puddingLeft, 
+	    		tartDonate, pieDonate, puddingDonate;
+	    
+	    System.out.println("----------------------Welcome to UUM bakery product made, leftovers and donation system---------------------");
+	    
+	  //User input product sold last month
+	    System.out.println("\nPlease enter the amounts of Tarts sold last month:");
+	    tartSoldLastMonth = sc.nextDouble();
+	    
+	    System.out.println("Please enter the amounts of Pies sold last month:");
+	    pieSoldLastMonth   = sc.nextDouble();
+	    
+	    System.out.println("Please enter the amounts of Puddings sold last month:");
+	    puddingSoldLastMonth = sc.nextDouble();
+	    
+	  //User input product made today
+	    System.out.println("\nPlease enter the amounts of Tarts made today:");
+	    tartMade = sc.nextInt();
+	    
+	    System.out.println("Please enter the amounts of Pies made today:");
+	    pieMade   = sc.nextInt();
+	    
+	    System.out.println("Please enter the amounts of Puddings made today:");
+	    puddingMade = sc.nextInt();
+	    
+	  //User input product sold today
+	    System.out.println("Please enter the amounts of Tarts sold today:");
+	    tartSold = sc.nextInt();
+	    
+	    System.out.println("Please enter the amounts of Pies sold today:");
+	    pieSold = sc.nextInt();
+	    
+	    System.out.println("Please enter the amounts of Puddings sold today:");
+	    puddingSold = sc.nextInt();
+	    
+	  //Calculation for leftovers product
+	    tartLeft= tartMade-tartSold;
+	    pieLeft=pieMade-pieSold;
+	    puddingLeft=puddingMade-puddingSold;
+	    
+	  //Calculation for product donated to be equally distributed
+	    tartDonate=tartLeft/2;
+	    pieDonate=pieLeft/2;
+	    puddingDonate=puddingLeft/2;
+	    
+	  //Calculation for average product sold daily last month
+	    avgTartMade=tartSoldLastMonth/30;
+	    avgPieMade=pieSoldLastMonth/30;
+	    avgPuddingMade=puddingSoldLastMonth/30;
+
+	  //Output the amount of product that should be made this month based on average product sold daily last month
+	    System.out.println("\n\nBased on the average sold product last month: ");
+	    
+	    System.out.println("Amounts of Tarts made today should be only  " + avgTartMade);
+	    
+	    System.out.println("Amounts of Pies made today should be only  " + avgPieMade);
+	    
+	    System.out.println("Amounts of Puddings today made should be only  " + avgPuddingMade);
+	    
+	    //Output the amount of product donated to food bank
+	    System.out.println("\nAmounts of product donated to food bank:");
+	    
+	    System.out.println("Tarts donated is " + tartDonate);
+		   
+	    System.out.println("Pies donated is " +pieDonate);
+	    
+	    System.out.println("Puddings donated is " +puddingDonate);
+	
+	    //Output the amount of product donated to homeless people
+	    System.out.println("\nAmount of product donated to homeless people:");
+	    
+	    System.out.println("Tarts donated is " + tartDonate);
+	   
+	    System.out.println("Pie donated is " +pieDonate);
+	    
+	    System.out.println("Pudding donated is " +puddingDonate);
+	   
+	 
+	}
+
+}
