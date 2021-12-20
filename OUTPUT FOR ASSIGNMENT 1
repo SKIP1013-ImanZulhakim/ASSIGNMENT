@@ -1,0 +1,37 @@
+----------------------Welcome to UUM bakery product made, leftovers and donation system---------------------
+
+Please enter the amounts of Tarts sold last month:
+1500
+Please enter the amounts of Pies sold last month:
+1500
+Please enter the amounts of Puddings sold last month:
+1500
+
+Please enter the amounts of Tarts made today:
+50
+Please enter the amounts of Pies made today:
+50
+Please enter the amounts of Puddings made today:
+50
+Please enter the amounts of Tarts sold today:
+45
+Please enter the amounts of Pies sold today:
+40
+Please enter the amounts of Puddings sold today:
+35
+
+
+Based on the average sold product last month: 
+Amounts of Tarts made today should be only  50.0
+Amounts of Pies made today should be only  50.0
+Amounts of Puddings today made should be only  50.0
+
+Amounts of product donated to food bank:
+Tarts donated is 2
+Pies donated is 5
+Puddings donated is 7
+
+Amount of product donated to homeless people:
+Tarts donated is 2
+Pie donated is 5
+Pudding donated is 7
